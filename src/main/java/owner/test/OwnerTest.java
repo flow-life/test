@@ -9,6 +9,7 @@ public class OwnerTest {
     public static void main(String[] args) {
         ServerConfig config = ConfigFactory.create(ServerConfig.class);
         System.out.println(config.port());
+        System.out.println(1 << 3);
 //        while(true){
 //            try {
 //                Thread.sleep(5000);

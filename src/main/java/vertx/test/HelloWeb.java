@@ -29,7 +29,7 @@ public class HelloWeb {
 
             response.end("text");
         });
-
         server.requestHandler(router::accept).listen(8080);
+        System.out.println(1);
     }
 }
