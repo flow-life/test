@@ -8,3 +8,6 @@ second change test
 third change test
 
 add from cloud
+third change test
+
+add from local
