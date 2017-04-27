@@ -8,7 +8,7 @@ import java.lang.instrument.Instrumentation;
 public class MyAgent {
 
     /**
-     * 改方法在main方法运行之前运行,与main方法运行在同一个JVM中
+     * 该方法在main方法运行之前运行,与main方法运行在同一个JVM中
      * 并被同一个System ClassLoader装载
      * 被统一的安全策略(security policy)和上下文(context)管理
      * @param agentOps

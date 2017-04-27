@@ -9,6 +9,7 @@ import java.util.concurrent.Executors;
 
 /**
  * https://github.com/LMAX-Exchange/disruptor/wiki/Getting-Started
+ * some test: http://www.111cn.net/jsp/Java/61893.htm
  * Created by pine on 2016/9/5.
  */
 public class LongEventMain {

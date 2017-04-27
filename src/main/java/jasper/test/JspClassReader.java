@@ -39,7 +39,7 @@ public class JspClassReader {
      * jsr-45
      * @param bytes
      * @param javaNum
-     * @return String[2]. 0 :fullFilename 1:sourceNum
+     * @return String[2]. 0 :fullFilename 1:sourceNum+
      */
     public static Object[] getMsgByNum(byte[] bytes,int javaNum){
         String str = new String(bytes);
@@ -202,14 +202,20 @@ public class JspClassReader {
         }
         int temp = ((javaNum + 1) - oStart);
         int _id = 0;
-        if(iCount > 0){
-            if(temp % iCount == 0){
-                _id = temp / iCount;
+//        if(iCount > 0){
+//            if(temp % iCount == 0){
+//                _id = temp / iCount;
+//            }else{
+//                _id = temp / iCount + 1;
+//            }
+//        }
+        if(oIncre > 0){
+            if(temp % oIncre == 0){
+                _id = temp / oIncre;
             }else{
-                _id = temp / iCount + 1;
+                _id = temp / oIncre + 1;
             }
         }
-
         return iStart + _id;
     }
 }
